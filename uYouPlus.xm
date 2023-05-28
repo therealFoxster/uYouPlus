@@ -134,6 +134,21 @@ static BOOL oldDarkTheme() {
 }
 %end
 
+// Fix streched artwork in uYou's player view
+%hook ArtworkImageView
+- (id)imageView {
+    UIImageView * imageView = %orig;
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    // Make artwork a bit bigger
+    UIView *artworkImageView = imageView.superview;
+    if (artworkImageView != nil && !artworkImageView.translatesAutoresizingMaskIntoConstraints) {
+        [artworkImageView.leftAnchor constraintEqualToAnchor:artworkImageView.superview.leftAnchor constant:16].active = YES;
+        [artworkImageView.rightAnchor constraintEqualToAnchor:artworkImageView.superview.rightAnchor constant:-16].active = YES;
+    }
+    return imageView;
+}
+%end
+
 # pragma mark - Tweaks
 // IAmYouTube - https://github.com/PoomSmart/IAmYouTube/
 %hook YTVersionUtils
