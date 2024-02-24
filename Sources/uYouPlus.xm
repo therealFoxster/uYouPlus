@@ -172,6 +172,7 @@ NSBundle *tweakBundle = uYouPlusBundle();
     %orig;
     if (IS_ENABLED(@"hideiSponsorBlockButton_enabled"))
         self.sponsorBlockButton.hidden = YES;
+        self.sponsorBlockButton.frame = CGRectZero;
 }
 %end
 
