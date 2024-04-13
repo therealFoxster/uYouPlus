@@ -7,8 +7,8 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Platform-iOS%20%7C%20iPadOS%2014.0%2B-yellow" alt="Badge"/>
-    <a href="https://github.com/qnblackcat/uYouPlus/wiki/FAQ"><img src="https://img.shields.io/badge/Question%3F-FAQ-yellow" alt="Badge"></img></a>
-    <a href="https://github.com/qnblackcat/uYouPlus/wiki/FAQ"><img src="https://custom-icon-badges.demolab.com/badge/translate-blue.svg?logo=translate&logoColor=white" alt="Badge"></img></a>
+    <a href="https://github.com/qnblackcat/uYouPlus/wiki/FAQs"><img src="https://img.shields.io/badge/Question%3F-FAQ-yellow" alt="Badge"></img></a>
+    <a href="https://github.com/qnblackcat/uYouPlus/wiki/FAQs"><img src="https://custom-icon-badges.demolab.com/badge/translate-blue.svg?logo=translate&logoColor=white" alt="Badge"></img></a>
 </p>
 
 <p align="center">
