@@ -67,7 +67,7 @@ extern NSBundle *uYouPlusBundle();
         selectBlock:^BOOL (YTSettingsCell *cell, NSUInteger arg1) {
             NSString *url = [NSString stringWithFormat:UYOUPLUS_NEW_ISSUE_URL, VERSION_STRING, LOC(@"ADD_TITLE")];
 
-            return [%c(YTUIUtils) openURL:[NSURL URLWithString:[url stringByReplacingOccurrencesOfString:@" " withString:@"%20"]]];
+            return [%c(YTUIUtils) openURL:[NSURL URLWithString:url]];
         }
     ];
     [sectionItems addObject:bug];
