@@ -214,5 +214,5 @@ static void refreshUYouAppearance() {
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"disableAgeRestriction"];
 
     // Disable uYou's playback speed controls (prevent crash on video playback https://github.com/therealFoxster/uYouPlus/issues/2#issuecomment-1894912963)
-    // [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"showPlaybackRate"];
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"showPlaybackRate"];
 }
