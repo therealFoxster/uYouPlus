@@ -186,6 +186,56 @@ static void refreshUYouAppearance() {
 - (void)beginEnlargeAnimation {}
 %end
 
+@interface GOODialogView : UIView
+- (UILabel *)titleLabel;
+@end
+
+%hook GOODialogView
+// Invert uYou logo in download dialog
+- (id)imageView {
+    UIImageView *imageView = %orig;
+
+    if (![[self titleLabel].text containsString:@"uYou"])
+        return imageView;
+
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"page_style"] == 0)
+        return imageView;
+
+    // https://gist.github.com/coryalder/3113a43734f5e0e4b497
+    UIImage *image = [imageView image];
+    CIImage *ciImage = [[CIImage alloc] initWithImage:image];
+    CIFilter *filter = [CIFilter filterWithName:@"CIColorInvert"];
+    [filter setDefaults];
+    [filter setValue:ciImage forKey:kCIInputImageKey];
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *output = [filter outputImage];
+    CGImageRef cgImage = [context createCGImage:output fromRect:[output extent]];
+    UIImage *invertedImage = [UIImage imageWithCGImage:cgImage];
+    CGImageRelease(cgImage);
+
+    // https://stackoverflow.com/a/2658801/19227228
+    CGSize size = CGSizeMake(30, 30);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    [invertedImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    [imageView setImage:resizedImage];
+    return imageView;
+}
+// Increase space between uYou label and video title
+- (id)titleLabel {
+    UILabel *titleLabel = %orig;
+    if ([titleLabel.text containsString:@"uYou\n"] &&
+        ![titleLabel.text containsString:@"uYou\n\n"]
+    ) {
+        NSString *text = [titleLabel.text stringByReplacingOccurrencesOfString:@"uYou\n" withString:@"uYou\n\n"];
+        [titleLabel setText:text];
+    }
+    return titleLabel;
+}
+%end
+
 %ctor {
     %init;
     // if (@available(iOS 16, *)) {
