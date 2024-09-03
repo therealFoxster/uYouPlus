@@ -19,6 +19,16 @@
 
 // #import <YouTubeHeader/YTISectionListRenderer.h> // Hide search ads by @PoomSmart - https://github.com/PoomSmart/YouTube-X
 
+// Replace YouTube's download with uYou's
+#import <YouTubeHeader/ELMPBShowActionSheetCommand.h>
+#import <YouTubeHeader/ELMPBElement.h>
+#import <YouTubeHeader/ELMPBProperties.h>
+#import <YouTubeHeader/ELMPBIdentifierProperties.h>
+#import <YouTubeHeader/YTMainAppControlsOverlayView.h>
+@interface YTMainAppControlsOverlayView(uYou)
+- (void)uYou;
+@end
+
 #define LOC(x) [tweakBundle localizedStringForKey:x value:nil table:nil]
 #define IS_ENABLED(k) [[NSUserDefaults standardUserDefaults] boolForKey:k]
 #define APP_THEME_IDX [[NSUserDefaults standardUserDefaults] integerForKey:@"appTheme"]
@@ -36,6 +46,7 @@ static NSString *const kHideRemixButton = @"hideRemixButton_enabled";
 static NSString *const kHideClipButton = @"hideClipButton_enabled";
 static NSString *const kHideDownloadButton = @"hideDownloadButton_enabled";
 static NSString *const kStockVolumeHUD = @"stockVolumeHUD_enabled";
+static NSString *const kReplaceYTDownloadWithuYou = @"kReplaceYTDownloadWithuYou_enabled";
 // Video controls overlay
 static NSString *const kHideAutoplaySwitch = @"hideAutoplaySwitch_enabled";
 static NSString *const kHideCC = @"hideCC_enabled";

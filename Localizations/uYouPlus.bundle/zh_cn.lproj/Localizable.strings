@@ -66,6 +66,9 @@
 "STOCK_VOLUME_HUD" = "使用 iOS 自带音量指示";
 "STOCK_VOLUME_HUD_DESC" = "";
 
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 视频播放器控制界面选项";
 

@@ -66,6 +66,9 @@
 "STOCK_VOLUME_HUD" = "Utiliser l'affichage iOS du volume par défaut";
 "STOCK_VOLUME_HUD_DESC" = "";
 
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Options de superposition des contrôles vidéo";
 

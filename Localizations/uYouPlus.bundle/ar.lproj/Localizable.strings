@@ -66,6 +66,9 @@
 "STOCK_VOLUME_HUD" = "استخدام مؤشر تغيير الصوت الخاص بالنظام";
 "STOCK_VOLUME_HUD_DESC" = "إظهار مؤشر تغيير الصوت الرسمي الخاص بـ iOS بدلاً من مؤشر يوتيوب";
 
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 أزرار التحكم على الطبقة فوق الفيديو";
 

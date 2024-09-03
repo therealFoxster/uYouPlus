@@ -66,6 +66,9 @@
 "STOCK_VOLUME_HUD" = "Sử dụng thanh âm lượng mặc định của iOS";
 "STOCK_VOLUME_HUD_DESC" = "";
 
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Tùy chọn hiển thị trong trình phát video";
 

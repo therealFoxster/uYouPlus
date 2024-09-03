@@ -66,6 +66,9 @@
 "STOCK_VOLUME_HUD" = "Utiliza el HUD de volumen de iOS";
 "STOCK_VOLUME_HUD_DESC" = "";
 
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Opciones de superposición de controles de vídeo";
 

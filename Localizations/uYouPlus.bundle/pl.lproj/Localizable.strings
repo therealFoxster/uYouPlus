@@ -66,6 +66,9 @@
 "STOCK_VOLUME_HUD" = "Użyj systemowego paska głośności";
 "STOCK_VOLUME_HUD_DESC" = "";
 
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
+
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Opcje wyglądu odtwarzacza video";
 
