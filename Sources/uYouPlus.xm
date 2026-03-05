@@ -450,7 +450,7 @@ YTMainAppControlsOverlayView *controlsOverlayView;
        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"YouPiPEnabled"]; 
     }
     if (![allKeys containsObject:kGoogleSigninFix]) { 
-       [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kGoogleSigninFix];
+       [[NSUserDefaults standardUserDefaults] setBool:NO forKey:kGoogleSigninFix];
     }
     if (![allKeys containsObject:kReplaceYTDownloadWithuYou]) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kReplaceYTDownloadWithuYou];
