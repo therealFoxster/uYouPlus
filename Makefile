@@ -63,7 +63,7 @@ before-all::
 		$(PRINT_FORMAT_BLUE) "Downloading uYou"; \
 	fi
 before-all::
-	@if [[ ! -f $(UYOU_DEB) && -n $(UYOU_URL) ]]; then \
+	@if [[ ! -f $(UYOU_DEB) && -n "$(UYOU_URL)" ]]; then \
 		curl -s $(UYOU_URL) -o $(UYOU_DEB); \
 	fi; \
 	if [[ ! -f $(UYOU_DEB) ]]; then \
